@@ -46,7 +46,8 @@ const HomePage = () => {
 
   const handleCheckNow = ({ slug, id }) => { history.push(`/${slug}/${id}/p`) }
   return (
-    <Layout>
+    // <Layout>
+    <div>
       {allProducts.products.length ?
         <div className="container" style={{ marginTop: "10px" }}>
           <div className="row">
@@ -55,8 +56,8 @@ const HomePage = () => {
                 <div className="card">
                   <div className="caContainer">
                     <Link className="caImgContainer" to={`/${product.slug}/${product._id}/p`} >
-                      {/* <img classNameName="card-img-top" style={{ margin: "10px 0 0 30px", height: "250px", width: "200px" }} src={`${imgUrl}${product.productPictures[0].img}`} /> */}
-                      <img classNameName="card-img-top" style={{ margin: "10px 0 0 30px", height: "200px", width: "200px" }} src="https://ecommerce-server-01.herokuapp.com/public/f99d6T-57-download1.jpg" />
+                      <img classNameName="card-img-top" style={{ margin: "10px 0 0 30px", height: "250px", width: "200px" }} src={`${imgUrl}${product.productPictures[0].img}`} />
+                      {/* <img classNameName="card-img-top" style={{ margin: "10px 0 0 30px", height: "200px", width: "200px" }} src="https://ecommerce-server-01.herokuapp.com/public/f99d6T-57-download1.jpg" /> */}
                     </Link>
                   </div>
                   <div className="card-body">
@@ -99,7 +100,8 @@ const HomePage = () => {
           <img src={loadingImg} style={{ width: "300px", height: "300px", marginTop: "auto" }} alt="Loading..." />
         </div>
       }
-    </Layout>
+      </div>
+    // </Layout>
 
 
   )
