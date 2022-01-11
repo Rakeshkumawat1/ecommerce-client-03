@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import HomePage from "./containers/HomePage";
-import ProductListPage from "./containers/ProductListPage";
 import { useDispatch, useSelector } from "react-redux";
 import { isUserLoggedIn, updateCart } from "./actions";
+import HomePage from "./containers/HomePage";
+import ProductListPage from "./containers/ProductListPage";
 import ProductDetailsPage from "./containers/ProductDetailsPage";
 import CartPage from "./containers/CartPage";
 import CheckoutPage from "./containers/CheckoutPage";
@@ -29,7 +29,6 @@ function App() {
 
   return (
     <div>
-      {/* <h1>Test</h1> */}
       <Router>
         <Switch>
           <Route path="/" exact component={HomePage} />
