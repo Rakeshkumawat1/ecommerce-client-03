@@ -56,7 +56,7 @@ const HomePage = () => {
                   <div className="caContainer">
                     <Link className="caImgContainer" to={`/${product.slug}/${product._id}/p`} >
                       {/* <img classNameName="card-img-top" style={{ margin: "10px 0 0 30px", height: "250px", width: "200px" }} src={`${imgUrl}${product.productPictures[0].img}`} /> */}
-                      <img classNameName="card-img-top" style={{ margin: "10px 0 0 30px", height: "200px", width: "200px" }} src="http://localhost:4000/public/f99d6T-57-download1.jpg" />
+                      <img classNameName="card-img-top" style={{ margin: "10px 0 0 30px", height: "200px", width: "200px" }} src="https://ecommerce-server-01.herokuapp.com/public/f99d6T-57-download1.jpg" />
                     </Link>
                   </div>
                   <div className="card-body">
